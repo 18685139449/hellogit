@@ -1,0 +1,17 @@
+#	server:
+#   port: 因为会启动多个 product-data-service, 所以端口号由用户自动设置，推荐 8001,8002,8003
+
+spring:
+  application:
+    name: product-data-service
+  #服务链路
+  #分别是数据服务和视图服务，随着业务的增加，就会有越来越多的微服务存在，
+  #他们之间也会有更加复杂的调用关系。
+  #这个调用关系，仅仅通过观察代码，会越来越难以识别，
+  #所以就需要通过 zipkin 服务链路追踪服务器 这个东西来用图片进行识别了。
+  zipkin:
+    base-url: http://localhost:9411
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

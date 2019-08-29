@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eurekaServer" />
+        <module name="product-view-service-ribbon" />
+        <module name="productDataservice" />
+      </profile>
+      <profile name="Annotation profile for product-view-service-feign" enabled="true">
+        <sourceOutputDir name="../product-viewservice-feign/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../product-viewservice-feign/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="product-view-service-feign" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eurekaServer" target="1.8" />
+      <module name="product-view-service-feign" target="1.8" />
+      <module name="product-view-service-ribbon" target="1.8" />
+      <module name="productDataservice" target="1.8" />
+      <module name="springcloud" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
